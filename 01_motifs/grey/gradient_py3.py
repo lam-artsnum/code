@@ -15,6 +15,6 @@ data = []
 for i in range(width * height):
     data.append(i % 256)
 
-out = bytes(bytearray(data))
+out = bytes(data)
 file = open("gradient.data", "wb")
 file.write(out)
